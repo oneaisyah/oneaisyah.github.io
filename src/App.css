@@ -1,0 +1,150 @@
+.App {
+  height: 100vh;
+  background-color: #0a0a0a;
+  position: relative;
+}
+
+h1 {
+  color: #F5A9B8;
+  font-size: 2rem;
+  font-family: monospace;
+}
+
+h2 {
+  color: #A0FFE6;
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+
+h3 {
+  color: #F5EAF5;
+  font-weight: 100;
+  font-family: monospace;
+}
+
+h4 {
+  color: #F5EAF5;
+  opacity: 0.7;
+  font-weight: 100;
+  font-size: 0.7rem;
+  font-family: monospace;
+}
+
+span {
+  color: #F5EAF5;
+  font-weight: 100;
+  font-family: monospace;
+}
+
+p {
+  color: #F5EAF5;
+}
+
+.content {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 45%;
+  height: 80%;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #F5A9B8 #0a0a0a;
+  padding: 1rem;
+}
+
+.hidden-message {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 30%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+}
+
+.hidden-message span {
+  display: inline-block;
+  animation: textmove 15s linear infinite;
+}
+
+@keyframes textmove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.tech-stack-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tech-stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem;
+  justify-content: flex-start;
+}
+
+.tech-stack {
+  border: #A0FFE6;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2rem;
+  padding: 0rem 1rem 0.3rem;
+}
+
+.paragraph {
+  margin: 1rem 0;
+}
+
+.project-card {
+  position: relative;
+  background: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+.project-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #F5A9B8;
+  color: #0a0a0a;
+  padding: 0.5rem 1rem;
+  border-bottom-right-radius: 12px;
+  font-family: monospace;
+}
+
+.project-image {
+  width: 100%;
+  object-fit: contain;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.project-info {
+  padding: 0 1rem 1rem;
+}
+
+.project-info p {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+}
+
+.project-card:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
